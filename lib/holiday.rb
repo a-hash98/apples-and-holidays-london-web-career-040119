@@ -81,7 +81,7 @@ def all_holidays_with_bbq(holiday_hash)
       arr.push(k.keys)
     end
   end
-  return arr.uniq
+  return arr.uniq.flatten
 
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
