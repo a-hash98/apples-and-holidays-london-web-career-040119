@@ -77,7 +77,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   arr = []
   holiday_hash.each do |season,k|
-    arr.push(k.values)
+    arr.push(k.values.flatten)
   end
   return arr
   # return an array of holiday names (as symbols) where supply lists
