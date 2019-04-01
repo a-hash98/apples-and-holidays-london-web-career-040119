@@ -78,7 +78,7 @@ def all_holidays_with_bbq(holiday_hash)
   arr = []
   holiday_hash.each do |season,k|
     if k.values.flatten.include?("BBQ")
-      arr.push(season)
+      arr.push(k.keys)
     end
   end
   return arr.uniq
